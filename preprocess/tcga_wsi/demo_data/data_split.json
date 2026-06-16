@@ -1,0 +1,10 @@
+{
+  "train": [
+    "TCGA-DEMO-0001-01Z-00-DX1",
+    "TCGA-DEMO-0002-01Z-00-DX1"
+  ],
+  "val": [
+    "TCGA-DEMO-0001-01Z-00-DX1",
+    "TCGA-DEMO-0002-01Z-00-DX1"
+  ]
+}

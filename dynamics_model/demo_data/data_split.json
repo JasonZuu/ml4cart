@@ -1,0 +1,51 @@
+{
+  "train": [
+    "DemoCaseA"
+  ],
+  "val": [
+    "DemoCaseB"
+  ],
+  "test": [],
+  "meta": {
+    "label_by_case": {
+      "DemoCaseA": 0,
+      "DemoCaseB": 1
+    },
+    "size_change_by_case": {
+      "DemoCaseA": -42.0,
+      "DemoCaseB": 21.0
+    },
+    "pdo_size": {
+      "DemoCaseA": 120.0,
+      "DemoCaseB": 180.0
+    },
+    "antigen": {
+      "DemoCaseA": 40.0,
+      "DemoCaseB": 72.0
+    },
+    "COL-I": {
+      "DemoCaseA": 0.2,
+      "DemoCaseB": 0.5
+    },
+    "COL-III": {
+      "DemoCaseA": 0.3,
+      "DemoCaseB": 0.4
+    },
+    "COL-IV": {
+      "DemoCaseA": 0.1,
+      "DemoCaseB": 0.6
+    },
+    "HA": {
+      "DemoCaseA": 0.2,
+      "DemoCaseB": 0.7
+    },
+    "PD-1": {
+      "DemoCaseA": 0.4,
+      "DemoCaseB": 0.2
+    },
+    "LAG-3": {
+      "DemoCaseA": 0.5,
+      "DemoCaseB": 0.3
+    }
+  }
+}

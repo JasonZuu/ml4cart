@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ML4CAR-T"
+version = "0.1.0"
+description = "Compact ML4CAR-T model and experiment code."
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = [
+  "common",
+  "preprocess",
+  "preprocess.tcga_wsi",
+  "preprocess.onchip_wsi",
+  "preprocess.dynamics",
+  "tcga_cd8_distribution",
+  "onchip_cd8_distribution",
+  "onchip_distribution_analysis",
+  "pdo_size_change_prediction",
+  "dynamics_model",
+  "dynamics_model.dataset",
+  "dynamics_model.model",
+  "dynamics_model.train_fn",
+  "dynamics_model.utils",
+  "dynamics_model.configs",
+  "dynamics_analysis",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
