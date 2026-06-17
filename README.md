@@ -16,6 +16,27 @@ The project supports three data streams and their downstream experiments:
 
 `wsi_survival_analysis` is intentionally not included in this compact package.
 
+## Version
+
+This release is `ML4CAR-T` version `0.1.0`. The version is recorded in both
+`pyproject.toml` and `VERSION`.
+
+## Publication Documentation
+
+The code-publication documentation is organized as follows:
+
+- `docs/INSTALLATION.md`: operating system, Python version, dependencies,
+  optional hardware/resources, and typical install time.
+- `docs/DEMO.md`: demo commands on included example data and typical runtimes.
+- `docs/TEST_DATA.md`: description of all included synthetic demo/test data.
+- `docs/METHODS_OVERVIEW.md`: key operations, software tasks, approach, and
+  major characteristics.
+- `docs/PARAMETERS.md`: command-line parameters, presets, and output files.
+- `docs/CODE_AVAILABILITY.md`: license, repository/DOI placeholders, and code
+  availability statement template.
+- `docs/PUBLICATION_CHECKLIST.md`: mapping from the publication guideline
+  requirements to repository files.
+
 ## Install
 
 Use a Python environment with GPU-enabled PyTorch if training on CUDA. The
@@ -29,6 +50,10 @@ pip install -r requirements.txt
 The single `requirements.txt` includes core ML dependencies plus WSI and
 TrackMate-related dependencies. Some WSI tools may still need system libraries
 such as OpenSlide to be available on the machine.
+
+Typical Python dependency install time on a current Linux workstation is
+approximately 5-15 minutes. See `docs/INSTALLATION.md` for optional external
+requirements such as OpenSlide and Fiji/ImageJ.
 
 ## Data Layout
 
@@ -164,6 +189,12 @@ python -m onchip_distribution_analysis.analyze_raw_mask_16_tiles --help
 
 Each experiment folder has its own README with purpose, inputs, detailed run
 commands, outputs, and smoke-test notes.
+
+## License And Availability
+
+The source code is released under the MIT License. Before manuscript
+submission, fill in the final repository URL, release tag, and DOI fields in
+`docs/CODE_AVAILABILITY.md`.
 
 ## Tests
 
